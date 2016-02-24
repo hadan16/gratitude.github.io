@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+
+		<title>Gratitude Clouds</title>
+
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<!-- <nav>
+			<ul class="nav">
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+				<li><a href="#">Link</a></li>
+			</ul>
+		<nav> -->
+
+
+		<section class="cloud-content">
+				<h1 class="title">Gratitude Clouds</h1>
+			<div id="clouds">
+				<div class="cloud x1"></div>
+				<div class="cloud x2"></div>
+				<div class="cloud x3"></div>
+				<div class="cloud x4"></div>
+				<div class="cloud x5"></div>
+			</div>
+
+			<div class="random-entry"></div>
+			<div class="cloud-background">
+
+		<!-- js marquee of text pulled from form entries -->
+			<div id="display">
+				<div class="text cloud"><p class="hello entry-1-input"></p></div>
+				<div class="text-2 cloud2"><p class="hello entry-2-input"></p></div>
+				<div class="hello2 text-3 cloud3"><p class="hello entry-3-input"></p></div>
+
+				<p class="text-5 entry-5-input"></p>
+				<p class="text-6 entry-6-input"></p>
+			</div>
+
+		</section>
+
+	<div class="spacer">
+  	&nbsp;
+		&nbsp;
+	</div>
+
+	<div class="main-wrapper">
+
+			<section class="main-content">
+
+					<h1>What Good is Gratitude?</h2>
+					<p>So what’s really behind our research results—why might gratitude have these transformative effects on people’s lives?</p>
+
+
+
+				<p class="hide-show">
+
+					<b>1. Gratitude allows us to celebrate the present.</b> It magnifies positive emotions.
+
+					Research on emotion shows that positive emotions wear off quickly. Our emotional systems like newness. They like novelty. They like change. We adapt to positive life circumstances so that before too long, the new car, the new spouse, the new house—they don’t feel so new and exciting anymore.
+					<br>
+					But gratitude makes us appreciate the value of something, and when we appreciate the value of something, we extract more benefits from it; we’re less likely to take it for granted.
+					In effect, I think gratitude allows us to participate more in life. We notice the positives more, and that magnifies the pleasures you get from life. Instead of adapting to goodness, we celebrate goodness. We spend so much time watching things—movies, computer screens, sports—but with gratitude we become greater participants in our lives as opposed to spectators.
+					<br>
+					<b>2. Gratitude blocks toxic, negative emotions</b>, such as envy, resentment, regret—emotions that can destroy our happiness.
+					<br>
+					This makes sense: You cannot feel envious and grateful at the same time. They’re incompatible feelings. If you’re grateful, you can’t resent someone for having something that you don’t.
+					<br>
+					<b>3. Grateful people are more stress resistant.</b>There’s a number of studies showing that in the face of serious trauma, adversity, and suffering, if people have a grateful disposition, they’ll recover more quickly. I believe gratitude gives people a perspective from which they can interpret negative life events and help them guard against post-traumatic stress and lasting anxiety.
+					<br>
+					<b>4. Grateful people have a higher sense of self-worth.</b>I think that’s because when you’re grateful, you have the sense that someone else is looking out for you—someone else has provided for your well-being, or you notice a network of relationships, past and present, of people who are responsible for helping you get to where you are right now.
+
+				</p>
+				<p class="readmore"><a href="#">See More</a></p>
+				<p class="readless"><a href="#">See Less</a></p>
+
+
+			</section>
+
+			<section class="topic">
+				<h2>Tips</h2>
+
+				<ul>
+					<li class="tips"><b>Don’t just go through the motions.</b> Be aware of your feelings and how you “relish” and “savor” this gift in your imagination. Take the time to be especially aware of the depth of your gratitude.</li>
+					<li class="tips"><b>Go for depth over breadth.</b> Elaborating in detail about a particular thing for which you’re grateful carries more benefits than a superficial list of many things.</li>
+					<li class="tips"><b>Get personal.</b> Focusing on people to whom you are grateful has more of an impact than focusing on things for which you are grateful.</li>
+					<li class="tips"><b>Try subtraction, not just addition.</b> One effective way of stimulating gratitude is to reflect on what your life would be like without certain blessings, rather than just tallying up all those good things.</li>
+					<li class="tips"><b>Savor surprises.</b> Try to record events that were unexpected or surprising, as these tend to elicit stronger levels of gratitude.</li>
+					<li class="tips"><b>Don’t overdo it.</b> Writing occasionally (once or twice per week) is more beneficial than daily journaling. In fact, one study by Lyubomirsky and her colleagues found that people who wrote in their gratitude journals once a week for six weeks reported boosts in happiness afterward; people who wrote three times per week didn’t.</li>
+				</ul>
+
+				<form action="//formspree.io/hadan16@gmail.com"
+		      method="POST" class="entries">
+
+						<ul class="list-style">
+							<!-- pre-populates todays date -->
+							<li><input type="text" id="toDate" size="10" class="date-val" placeholder="date"/></li>
+
+							<li><input type="value" class="entry entry-1-val" name="entry1" placeholder="1"/></li>
+							<li><input type="value" class="entry entry-2-val" name="entry2" placeholder="2"/></li>
+							<li><input type="value" class="entry entry-3-val" name="entry3" placeholder="3"/></li>
+
+						</ul>
+						<div class="add-save">
+							<input type="button" value="+" class="add-btn" />
+							<input type="button" value="Save" class="save-btn" />
+							<input type="submit" value="Email">
+						</div>
+					</form>
+			</section>
+
+		  <!-- <section class="printed-entries">
+				<h2>Summary</h2>
+				<div>&nbsp;</div>
+		    <p><span class="bold">Date:</span> <span class="date-input"></span></p>
+				<br>
+		    <p><span>1)</span> <span class="entry-1-input"></span></p>
+		    <p><span>2)</span> <span class="entry-2-input"></span></p>
+		    <p><span>3)</span> <span class="entry-3-input"></span></p>
+		  </section> -->
+
+		</div>
+	<!-- closes main-wrapper -->
+
+
+
+		<!-- Javascript sources -->
+		<script src='https://code.jquery.com/jquery-2.2.0.min.js'></script>
+		<script src="/Users/danha/Documents/General Assembly/final_project (new clouds)/hadan16.github.io/js/index.js"></script>
+
+		<!-- Background audio -->
+		<div id="player" style="position: absolute; top: -9999px; left: -9999px;"></div>
+		<div id="info"></div>
+		<script src="http://www.youtube.com/player_api"></script>
+		<script>
+		var info = document.getElementById('info');
+		function onYouTubePlayerAPIReady() {
+		  var player = new YT.Player('player', {
+		      videoId: 'qREKP9oijWI', // this is the id of the video at youtube (the stuff after "?v=")
+		      loop: true,
+		      events: {
+		          onReady: function (e) {
+		              info.innerHTML = '';
+		              e.target.playVideo();
+		          },
+		          onStateChange: function (event) {
+		              if (event.data === 1) {
+		                  info.innerHTML = '';
+		              }
+		          }
+		      }
+		  });
+		}
+		</script>
+
+	</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+<!-- <div class="cloud-background">
+  <marquee class="marquee"><img src="http://www.npcdataguard.com/images/transparent-icon-cloud.png" class="cloud"/></marquee>
+  <marquee class="marquee" scrollamount="10"><img src="http://www.npcdataguard.com/images/transparent-icon-cloud.png" class="cloud"/></marquee>
+  <marquee class="marquee" scrollamount="8" direction="right"><img src="http://www.npcdataguard.com/images/transparent-icon-cloud.png" class="cloud"/></marquee>
+<div> -->

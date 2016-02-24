@@ -1,0 +1,449 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+
+body {
+  background: #c9dbe9;
+  background: -webkit-linear-gradient(#c9dbe9, #fff);
+  font-family: Helvetica Neue;
+  overflow: scroll;
+  overflow-x: hidden;
+  min-width: 459px;
+  /*max-width: 1440px;*/
+  /*background: url('/Users/danha/Documents/General Assembly/final_project (new clouds)/hadan16.github.io/images/blue_bg.png') repeat 0 0;*/
+  background-image: url("/Users/danha/Documents/General Assembly/final_project (new clouds)/hadan16.github.io/images/background2.png");
+  background-size: 1680px 1416px;
+  background-repeat:no-repeat;
+  /*background-image: url("/Users/danha/Documents/General Assembly/final_project (new clouds)/hadan16.github.io/images/ background1.jpg");*/
+
+  /*background: #c9dbe9;
+  background: -webkit-linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  background: -linear-gradient(top, #c9dbe9 0%, #fff 100%);
+  background: -moz-linear-gradient(top, #c9dbe9 0%, #fff 100%);*/
+}
+
+/*.nav {
+  float:right;
+  padding: 42px 0 0 30px;
+  position:fixed;
+  background:rgba(0, 0, 0, 0.25);
+  width: 100%;
+}
+
+.nav li {
+  float:left;
+  margin: 0 0 0 5px;
+}
+
+.nav li a {
+  padding: 4px 15px;
+  font-weight:bold;
+  color: rgba(255, 255, 255, 0.7);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.nav li a:hover,
+.nav li a:focus {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.15);
+}*/
+
+.main-wrapper{
+  margin-top:100px;
+}
+
+.cloud-content {
+  height:160px;
+  width:100%;
+  /*padding:10px;*/
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+  display:inline-block;
+  z-index: 9999;
+  position:fixed;
+  background: -webkit-linear-gradient(top, #30A9E0 0%, #fff 100%);
+  /*background: -webkit-linear-gradient(top, #2764CD 0%, #fff 100%);*/
+
+}
+
+.title {
+  position: absolute;
+  z-index: 1;
+  margin: 2px 0 0 7px;
+}
+}
+
+.spacer{
+    width: 100%;
+    height: 661px;
+}
+
+.main-content{
+  /*height:200px;*/
+  background-color: rgba(255, 255, 255, 0.5);;
+  padding: 10px 10px 25px 10px;
+  margin: 168px 45px 0px 45px;
+  border-radius: 5px;
+}
+
+.tips{
+  margin:5px 0px 0px 20px;
+}
+
+.topic{
+  background-color: rgba(255, 255, 255, 0.5);;
+  padding:10px;
+  margin: 24px 45px 0px 45px;
+  border-radius: 5px;
+}
+
+.list-style {
+  list-style: none;
+}
+
+.entries {
+  width: 96%;
+  margin: 10px;
+}
+
+.delete {
+    margin: 11px 0px 5px 5px;
+    /*width: 2%;
+    height: 20px;
+    padding: 10px;
+    border: 1px solid #e4e4e4;
+    border-radius: 1px;*/
+    padding: 14px 9px;
+    float:left;
+}
+
+.printed-entries {
+  clear:both;
+  background-color: rgba(255, 255, 255, 0.5);;
+  padding:10px;
+  margin: 24px 45px 24px 45px;
+  border-radius: 5px;
+}
+
+.date-val {
+  margin: 5px;
+  width: 82px;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 14px 9px;
+}
+
+.entry {
+  margin: 5px 0px 5px 5px;
+  width: 96%;
+  height: 20px;
+  padding: 10px;
+  border: 1px solid #e4e4e4;
+  border-radius: 8px;
+  font-size: 12px;
+  padding: 14px 9px;
+  float:left;
+}
+
+.add-save {
+  margin-bottom:10px;
+  clear:both;
+}
+
+
+.hide-show {
+	display:none;
+}
+
+.readmore {
+  float:right;
+  margin-top: 2px;
+}
+
+.readless {
+  display:none;
+  float:right;
+}
+
+
+
+
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+/*====================================================
+Fluffy clouds CSS!
+====================================================*/
+#clouds {
+    position:absolute;
+    top:39px;
+    z-index: -1;
+  	padding: 100px 0;
+    height: 186px;
+
+  }
+
+  /*Time to finalise the cloud shape*/
+  .cloud {
+  	width: 230px; height: 102px;
+  	background: #fff;
+
+  	border-radius: 200px;
+  	-moz-border-radius: 200px;
+  	-webkit-border-radius: 200px;
+
+  	position: relative;
+  }
+
+  .cloud2 {
+    width: 230px; height: 102px;
+    background: #fff;
+
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+
+    position: relative;
+  }
+
+  .cloud3 {
+    width: 230px; height: 102px;
+    background: #fff;
+
+    border-radius: 200px;
+    -moz-border-radius: 200px;
+    -webkit-border-radius: 200px;
+
+    position: relative;
+  }
+
+
+  .cloud:before, .cloud:after, .cloud2:before, .cloud2:after, .cloud3:before, .cloud3:after{
+  	content: '';
+  	position: absolute;
+  	background: #fff;
+  	width: 182px; height: 105px;
+  	position: absolute; top: -11px; left: 24px;
+
+  	border-radius: 100px;
+  	-moz-border-radius: 100px;
+  	-webkit-border-radius: 96px;
+
+  	-webkit-transform: rotate(30deg);
+  	transform: rotate(43deg);
+  	-moz-transform: rotate(30deg);
+  }
+
+  .cloud:after, .cloud2:after, .cloud3:after{
+  	width: 69px; height: 172px;
+  	top: -36px; left: 81px; right: 62px;
+  }
+
+  .shift{
+    left:500px;
+  }
+
+
+
+
+  /*animation of the other clouds*/
+  .x1 {
+    top: -104px;
+    left: 10px;
+  	-webkit-animation: moveclouds 20s linear infinite;
+  	-moz-animation: moveclouds 20s linear infinite;
+  	-o-animation: moveclouds 20s linear infinite;
+  }
+
+  /*variable speed, opacity, and position of clouds for realistic effect*/
+  .x2 {
+  	left: 200px;
+    top: -238px;
+  	-webkit-transform: scale(0.6);
+  	-moz-transform: scale(0.6);
+  	transform: scale(0.6);
+  	opacity: 0.6; /*opacity proportional to the size*/
+
+  	/*Speed will also be proportional to the size and opacity*/
+  	/*More the speed. Less the time in 's' = seconds*/
+  	-webkit-animation: moveclouds 25s linear infinite;
+  	-moz-animation: moveclouds 25s linear infinite;
+  	-o-animation: moveclouds 25s linear infinite;
+  }
+
+  .x3 {
+  	left: -250px; top: -340px;
+
+  	-webkit-transform: scale(0.8);
+  	-moz-transform: scale(0.8);
+  	transform: scale(0.8);
+  	opacity: 0.8; /*opacity proportional to the size*/
+
+  	-webkit-animation: moveclouds 20s linear infinite;
+  	-moz-animation: moveclouds 20s linear infinite;
+  	-o-animation: moveclouds 20s linear infinite;
+  }
+
+  .x4 {
+  	left: -270px; top: -447px;
+
+  	-webkit-transform: scale(0.75);
+  	-moz-transform: scale(0.75);
+  	transform: scale(0.75);
+  	opacity: 0.75; /*opacity proportional to the size*/
+
+  	-webkit-animation: moveclouds 18s linear infinite;
+  	-moz-animation: moveclouds 18s linear infinite;
+  	-o-animation: moveclouds 18s linear infinite;
+  }
+
+  .x5 {
+  	left: -150px; top: -541px;
+
+  	-webkit-transform: scale(0.8);
+  	-moz-transform: scale(0.8);
+  	transform: scale(0.8);
+  	opacity: 0.8; /*opacity proportional to the size*/
+
+  	-webkit-animation: moveclouds 20s linear infinite;
+  	-moz-animation: moveclouds 20s linear infinite;
+  	-o-animation: moveclouds 20s linear infinite;
+  }
+
+  @-webkit-keyframes moveclouds {
+  	0% {margin-left: 1200px;}
+  	100% {margin-left: -1000px;}
+  }
+  @-moz-keyframes moveclouds {
+  	0% {margin-left: 1200px;}
+  	100% {margin-left: -1000px;}
+  }
+  @-o-keyframes moveclouds {
+  	0% {margin-left: 1200px;}
+  	100% {margin-left: -1000px;}
+  }
+
+
+
+
+  *{margin:0; padding:0;}
+#display{
+  /*background:hsla(210,100%,50%,1);*/
+  height:200px;
+  width:100%;
+  overflow:hidden;
+  position:relative;
+}
+
+
+/*text represents the marquee text*/
+.text{
+  cursor:pointer;
+  position:absolute;
+  left:14px;
+  top:21px;
+  width:210px;
+  font-size:10px;
+}
+
+.text-2{
+  cursor:pointer;
+  position:absolute;
+  left:153px;
+  top: 18px;
+  width:224px;
+  font-size:10px;
+  margin-left: 281px;
+}
+
+.text-3{
+  cursor:pointer;
+  position:absolute;
+  left:786px;
+  top: 40px;
+  width:248px;
+  font-size:10px;
+  /*margin-left: 251px;*/
+}
+
+.text-4{
+  cursor:pointer;
+  position:absolute;
+  left:1116px;
+  top: 9px;
+  width:248px;
+  font-size:10px;
+  /*margin-left: 251px;*/
+}
+
+.hello{
+  z-index: 1000;
+  position: relative;
+  margin-left:36px;
+  width: 155px;
+  top:8px;
+}
+
+.hello2{
+  z-index: 1000;
+  position: relative;
+  margin-left:766px;
+  width: 215px;
+  top:8px;
+}
