@@ -128,15 +128,15 @@ body {
   margin: 2px 0 0 7px;
 }
 
-.center {
-    margin: auto;
-    position: absolute;
-    top: 121px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    width: 100px;
-}
+/*.center {*/
+/*    margin: auto;*/
+/*    position: absolute;*/
+/*    top: 121px;*/
+/*    left: 0;*/
+/*    bottom: 0;*/
+/*    right: 0;*/
+/*    width: 100px;*/
+/*}*/
 
 .spacer{
     width: 100%;
