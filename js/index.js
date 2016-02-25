@@ -9,7 +9,7 @@ var count = 3
     count++
     console.log(count);
 
-    $('.list-style').append ('<li>' + '<input type="value" class="entry entry-'+count+'-val" name="entry'+count+'" placeholder=" '+count+'"/>' + '<input class="delete" type="button" value="X">' + '</li>');
+    $('.list-style').append ('<li>' + '<input type="value" class="entry entry-'+count+'-val" name="entry'+count+'" placeholder="'+count+'"/>' + '<input class="delete" type="button" value="X">' + '</li>');
 
     $('.printed-entries').append('<p>'+'<span>'+''+count+') '+'</span>'+'<span class="entry-'+count+'-input">'+'</span>'+'</p>');
   });
