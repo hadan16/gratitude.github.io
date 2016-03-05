@@ -1,0 +1,293 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.alignright {
+  float: right;
+  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+  float: left;
+  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+     color: #4B525B;
+     font-size: 14px;
+     line-height: 1.4;
+     font-family: "Lora", "georgia", serif;
+     background-image: url("https://d3c2plo0qyv3hc.cloudfront.net/images/backgrounds/wood.jpg");
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+/* Center the container */
+.container {
+  /*width: 960px;*/
+  width: 80%;
+  margin: 87px auto 87px auto;
+  background-image: url("/Users/danha/Desktop/light up/images/paper.png");
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+/*.second-sheet {
+  width: 85%;
+  background-image: url("/Users/danha/Desktop/light up/images/paper.png");
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transform: rotate(-2deg);
+    -moz-transform: rotate(-2deg);
+    -ms-transform: rotate(-2deg);
+    -o-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+  position: absolute;
+}*/
+
+.intro {
+  padding: 35px 43px 0 43px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.fog-images {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fog-head {
+  width:250px;
+  height:371px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.animals-in-fog {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.clear-clouds {
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  margin: 24px auto auto auto;
+  display: block;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.quote {
+  font-style:italic;
+  text-align:center;
+  font-size: 14px;
+}
+
+.italic {
+  font-style:italic;
+}
+
+.video {
+  margin: 0 auto;
+  display: block;
+}
+
+h2 { font-size: 14px !important; }
+
+h3 { font-size: 12px !important; }
+
+h4 { font-size: 10px !important; }
+
+.gratitude-1,
+.gratitude-2,
+.gratitude-3,
+.gratitude-4,
+.gratitude-5 {
+  display: block;
+  width: 100%;
+  height: 28px;
+  margin: 4px;
+  font-family: "Lora", "georgia", serif;
+  font-size: 14px;
+}
+
+.fogless-1,
+.fogless-2,
+.fogless-3 {
+  display: block;
+  width: 100%;
+  height: 28px;
+  margin: 4px;
+  font-family: "Lora", "georgia", serif;
+  font-size: 14px;
+}
+
+.tomorrow-1,
+.tomorrow-2,
+.tomorrow-3 {
+  display: block;
+  width: 100%;
+  height: 28px;
+  margin: 4px;
+  font-family: "Lora", "georgia", serif;
+  font-size: 14px;
+}
+
+.future-1,
+.future-2,
+.future-3,
+.future-4,
+.future-5,
+.future-6 {
+  display: block;
+  width: 100%;
+  height: 28px;
+  margin: 4px;
+  font-family: "Lora", "georgia", serif;
+  font-size: 14px;
+}
+
+.habits-1,
+.habits-2,
+.habits-3 {
+  display: block;
+  width: 100%;
+  height: 28px;
+  margin: 4px;
+  font-family: "Lora", "georgia", serif;
+  font-size: 14px;
+}
+
+.pull-quote{
+  font-style: italic;
+}
+
+
+.awareness {
+  padding: 0px 43px 0 43px;
+}
+
+.attitude {
+  padding: 0px 43px 0 43px;
+}
+
+.authenticity {
+  padding: 0px 43px 0 43px;
+}
+
+.entry-recap {
+  padding: 0px 43px 35px 43px;
+}
+
+
+
+.actions-wrap{
+  padding: 15px;
+  margin:5px;
+}
+
+.gratitude-wrap{
+  padding: 15px;
+  margin:5px;
+}
+
+.fogless-wrap{
+  padding: 15px;
+  margin: 5px 5px -22px 5px;
+}
+
+/*read more and read less*/
+.hide-show {
+	display:none;
+}
+
+.hide-show2 {
+	display:none;
+}
+
+.hide-show3 {
+  display: none;
+}
+
+.readless {
+  display:none;
+  float:right;
+  margin-top: -12px;
+}
+
+.readless2 {
+  display:none;
+  float:right;
+  margin-top: 1px;}
+
+.readless3 {
+  display:none;
+  float:right;
+  margin-top: 1px;}
+
+
+.readmore {
+  float:right;
+  margin-top: -17px;
+}
+
+.readmore2 {
+  float:right;
+  margin-top: -10px;
+}
+
+.readmore3 {
+  float:right;
+  margin-top: -10px;
+}
+/*end read more and read less*/
+
+
+.hide-till-print {
+  display:none;
+}
+
+.save-btn {
+  margin-top: 7px;
+  margin-left: 4px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
